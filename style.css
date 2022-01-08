@@ -1,0 +1,53 @@
+.parent{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    margin: 3%;
+
+}
+.parent>.card{
+    width: 50%;
+    padding: 1%;
+    margin: 4%;
+    border: 2px solid red;
+
+}
+button{
+    color: red;
+    width: 50%;
+
+}
+div{
+    text-align: center;
+}
+img{
+    width: 100px;
+}
+/* mobile devices 320px to 480px */
+/* tablets 481 to 768 */
+/* mini desktops 769 to 1024*/
+/* larger desktops 1025px to1200px*/
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent>.card{
+        width:90%
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent>.card{
+        width:90%
+    }
+    .card.div{
+        width: 90%;
+    }
+
+}
